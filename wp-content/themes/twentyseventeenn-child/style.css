@@ -8,3 +8,44 @@ Description: Site d'apprentisage de modif de theme
 Text Domain: twentyseventeen
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
+
+
+/*import le them parent*/
+@import url(../twentyseventeen/style.css);
+
+/*---------------------------------------------------------------
+Main Navigation
+----------------------------------------------------------------*/
+
+.navigation-top {
+	background: black;
+	border-top: 1px solid black;
+	color: white;
+}
+.main-navigation a {
+    color: white;
+}
+.menu-toggle{
+	color: white;
+}
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+    color: white;
+}
+.site-header .navigation-top .menu-scroll-down {
+    color: white;
+}
+
+/*--------------------------------------------------------------
+13.6 Footer modification
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: black;
+	color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+15.0 Widgets modification
+--------------------------------------------------------------*/
+h2.widget-title {
+	color: white;
+}
