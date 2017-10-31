@@ -1,4 +1,12 @@
 /*
+Theme Name: marble
+Author: Michel Ginsbach
+Description: Theme marble 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*
 	Polices chargées :
 
 	font-family: 'Roboto', sans-serif;
@@ -114,7 +122,7 @@ body {
 	padding: 0px 10px;
 }
 
-.main-header ul li.active a,
+.main-header ul li.current-menu-item a,
 .main-header ul li a:hover,
 .main-header ul li a:focus,
 .main-header ul li a:active {
