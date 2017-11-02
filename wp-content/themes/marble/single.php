@@ -3,7 +3,7 @@
 		<section id="main-content" class="wrapper">
 			<div class="container">
 				<div class="col">
-					<h1>home.php</h1>
+					<h1>single.php</h1>
 					<!-- la boucle-->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ): the_post(); ?>  
