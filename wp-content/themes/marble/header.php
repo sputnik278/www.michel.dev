@@ -20,7 +20,7 @@
 			<h1 class="logo"><?php bloginfo('name'); ?></h1>
 			<nav>
 				<?php wp_nav_menu( array
-					( 'theme_location' => 'header-menu' 
+					( 'theme_location' => 'header_menu' 
 					) ); 
 				?>
 			</nav>

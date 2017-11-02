@@ -24,7 +24,7 @@ function marble_setup(){
 
 	// This theme uses wp_nav_menu()
 	register_nav_menus( array(
-	'header-menu' => 'Navigation pricipal',
+	'header_menu' => 'Navigation pricipal',
 	'footer_menu' => 'Navigation du footer',
 	) );
 

@@ -357,7 +357,25 @@ body {
 	text-decoration: underline;
 }
 
-
 .main-footer .copyrights {
 	margin: 30px 0px;
 }
+
+.main-footer .copyrights .menu{
+	margin: 0;
+}
+
+.main-footer .copyrights .menu li{
+	margin: 0;
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid white;
+}
+.main-footer .copyrights .col+ .col{
+	text-align: right;
+}
+
+.main-footer .copyrights .menu li:last-child{
+	border-right: none;
+}
+
