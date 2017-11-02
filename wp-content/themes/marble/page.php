@@ -3,7 +3,7 @@
 		<section id="main-content" class="wrapper">
 			<div class="container">
 				<div class="col">
-					<h1>index.php</h1>
+					<h1>page.php</h1>
 					<!-- la boucle-->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ): the_post(); ?>  
@@ -17,11 +17,7 @@
 								par <?php the_author(); ?>
 								<!--affiche le contenue de l'article-->
 							<div class="entry-content">
-								<?php if (!is_singular() ) : ?>
-								<?php the_excerpt(); ?>
-							<?php else : ?>
 								<?php the_content(); ?>
-							<?php endif; ?>
 							</div>
 							<?php endwhile; ?>
 						<!-- fin de la boucle-->
