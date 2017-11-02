@@ -5,11 +5,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>
+<body> <?php body_class(); ?>
 
 	<header class="main-header">
 		<div class="wrapper">
-			<h1 class="logo"><?php bloginfo('name'); ?></h1>
+			<h1 class="logo">
+				<?php bloginfo('name'); ?>
+			</h1>
 			<nav>
 				<?php wp_nav_menu( array
 					( 'theme_location' => 'header_menu' 

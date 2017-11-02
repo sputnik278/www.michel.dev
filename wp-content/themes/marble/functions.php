@@ -72,7 +72,12 @@ function marble_scripts() {
     	'marble-fonts', 
     	'https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700|Roboto+Slab:400,700'
     	);
-   /* wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );*/
+   	wp_enqueue_script(
+   		'marble-script',		//identifiant unique
+   		get_template_directory_uri() . '/js/script.js',  //url du script
+   		array('jQuery'),		//dépendances
+   		'1.0.0',				//version
+   		true );					//charé dans la footer ?
 }
 add_action( 'wp_enqueue_scripts', 'marble_scripts' );
 
