@@ -31,12 +31,13 @@
 	<!-- ./main-header -->
 	
 	<main>
-
-<!--	<section class="jumbotron">
+		<?php if(is_front_page()): ?>
+		<section class="jumbotron">
 			<div class="wrapper">
 				<h2>We are digital &amp; branding agency based in London.</h2>
 				<h3>We love to turn great ideas into beautiful products.</h3>
-				<a href="#" class="button">See portfolio</a>
+				<a href="<?php echo get_permalink( 47 ) ?>" class="button">See portfolio</a>
 			</div>
 		</section>-->
 		<!-- ./jumbotron -->
+		<?php endif; ?>

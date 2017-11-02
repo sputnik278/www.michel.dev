@@ -3,7 +3,7 @@
 		<section id="main-content" class="wrapper">
 			<div class="container">
 				<div class="col">
-					<h1>home.php</h1>
+					<h1>page-10.php/contact</h1>
 					<!-- la boucle-->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ): the_post(); ?>  
@@ -12,13 +12,8 @@
 								<?php the_title(); ?>
 							</h2></a>
 
-							<p class="post-metas">
-								<!--affiche l'auteur et la date de publication-->
-								Posté le <?php echo get_the_date(); ?> dans <?php the_category(', ') ?>
-								par <?php the_author(); ?>
-
 							<div class="entry-content">
-								<?php the_excerpt(); ?>
+								<?php the_content(); ?>
 							</div>
 							<?php endwhile; ?>
 						<!-- fin de la boucle-->
@@ -29,11 +24,6 @@
 						Aucun contenue à afficher
 						</p>
 					<?php endif; ?>
-					<!-- fin -->
-					
-				</div>
-				<div class="col" style="max-width: 400px">
-					<?php dynamic_sidebar( 'right-sidebar' ); ?>
 				</div>
 			</div>
 		</section>

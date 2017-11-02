@@ -379,3 +379,12 @@ body {
 	border-right: none;
 }
 
+/* side bars */
+
+.widget-box {
+	border: 1px solid #999;
+	background-color: #FDFDFD;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}

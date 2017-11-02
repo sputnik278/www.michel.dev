@@ -31,7 +31,32 @@ function marble_setup(){
 }
 add_action('after_setup_theme', 'marble_setup');
 
-//sotper une fonction
+
+function marble_setup_widgets_init() {
+    register_sidebar( array(
+        'name' => 'Sidebar droite',
+        'id' => 'right-sidebar',
+        'description' => 'Le contenu de la sidebar du site',
+        'before_widget' => '<div id="%1$s" class="widget-box widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => 'Sidebar footer',
+        'id' => 'footer-sidebar',
+        'description' => 'Le ontenu du pied de page.',
+        'before_widget' => '<div id="%1$s" class="col widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widgettitle">',
+		'after_title'   => '</h4>',
+    ) );
+}
+
+add_action( 'widgets_init', 'marble_setup_widgets_init' );
+
+//stoper une fonction
 //remove_action('after_setup_theme', 'marble_setup');
 
 ?>

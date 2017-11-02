@@ -11,11 +11,7 @@
 							<h2 class="entry_title">
 								<?php the_title(); ?>
 							</h2></a>
-							<p class="post-info">
-								<!--affiche l'auteur et la date de publication-->
-								Posté le <?php echo get_the_date(); ?> dans <?php the_category(', ') ?>
-								par <?php the_author(); ?>
-								<!--affiche le contenue de l'article-->
+
 							<div class="entry-content">
 								<?php the_content(); ?>
 							</div>
