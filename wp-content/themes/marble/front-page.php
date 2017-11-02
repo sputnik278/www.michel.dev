@@ -1,9 +1,10 @@
 <?php get_header(); ?>
-
+<!-- ..............................................................................-->
 		<section id="section-icons" class="wrapper">
 			<div class="container">
 				<div class="col">
 					<i class="icon lamp"></i>
+					<h1>Front-page.php</h1>
 					<h4>Pellentesque</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quasi facere, animi maxime natus cupiditate</p>
 				</div>
@@ -57,4 +58,5 @@
 				</article>
 			</div>
 		</section>
+<!-- ..............................................................................-->
 <?php get_footer(); ?>

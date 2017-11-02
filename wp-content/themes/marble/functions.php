@@ -22,6 +22,13 @@ function marble_setup(){
 		'caption',
 	) );
 
+    // ajoute une taille d'image personalisé
+    // nom (SLUG) de l'image, largeur, hauteru, crop
+    add_image_size( 'taille-baniere', 1024, 300, true );
+    
+    //fonctionalite pour les image dans admin
+    add_theme_support( 'post-thumbnails', array( 'post' )); 
+
 	// This theme uses wp_nav_menu()
 	register_nav_menus( array(
 	'header_menu' => 'Navigation pricipal',
