@@ -9,7 +9,7 @@
 						<?php while ( have_posts() ): the_post(); ?>  
 
 							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
+								<?php the_post_thumbnail( 'taille-baniere' ); ?>
 							<?php endif; ?>
 							<a href="<?php the_permalink(); ?>">
 							<h2 class="entry_title">
