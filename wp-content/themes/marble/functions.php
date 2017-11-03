@@ -154,8 +154,7 @@ function portfolio_post_type() {
         'can_export'            => true,
         'has_archive'           => 'portfolioreferences',
         'exclude_from_search'   => false,
-        'publicly_queryable'    => true,
-        'rewrite'               => $rewrite,
+        'publicly_queryable'    => true, 
         'capability_type'       => 'post',
         'show_in_rest'          => false,
     );
@@ -248,6 +247,20 @@ function portfolio_type_taxonomy() {
 
 }
 add_action( 'init', 'portfolio_type_taxonomy', 0 );
+
+
+function marble_custom_meta ( $post_id ) {
+    if ( $_GET['post_type'] == 'portfolio'){
+    //permet d'enregistere dynamiquement une nouvelle donnée meta associer a un npost
+    add_post_meta( $post_id, 'annee', '2017', true);
+    //add_post_mets compreent plusieur parametre
+    //id du post
+    //nom de la meta enregistrer
+    //valeur de la meta
+    //true: renvoie uniquement la valeur, si false nrevoie un tasbleuau [clé, valeur]
+     }
+}
+add_action( 'wp_insert_post', 'marble_custom_meta');
 //stoper une fonction
 //remove_action('after_setup_theme', 'marble_setup');
 

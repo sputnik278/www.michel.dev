@@ -23,7 +23,9 @@
 
 							<div class="entry-content">
 								<?php the_content(); ?>
+								<p><?php echo get_post_meta ( get_the_ID (), true ); ?></p>
 							</div>
+
 							<?php endwhile; ?>
 						<!-- fin de la boucle-->
 						
