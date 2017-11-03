@@ -25,7 +25,7 @@ function marble_setup(){
 
     add_theme_support( 'post-thumbnails',array('post' , 'portfolio' ) );
 
-    
+
     // ajoute une taille d'image personalisé
     // nom (SLUG) de l'image, largeur, hauteur, crop
     add_image_size( 'list-tumbnail', 250, 180, true );
@@ -141,7 +141,7 @@ function portfolio_post_type() {
         'label'                 => __( 'Portfolio', 'marble' ),
         'description'           => __( 'Portfolio information page', 'marble' ),
         'labels'                => $labels,
-        'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'custom-fields', ),
+        'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'custom-fields' ),
         'taxonomies'            => array( 'color', 'type' ),
         'hierarchical'          => false,
         'public'                => true,
