@@ -22,6 +22,10 @@ function marble_setup(){
 		'caption',
 	) );
 
+
+    add_theme_support( 'post-thumbnails',array('post' , 'portfolio' ) );
+
+    
     // ajoute une taille d'image personalisé
     // nom (SLUG) de l'image, largeur, hauteur, crop
     add_image_size( 'list-tumbnail', 250, 180, true );
