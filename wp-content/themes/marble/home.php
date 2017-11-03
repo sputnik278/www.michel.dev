@@ -7,9 +7,12 @@
 					<!-- la boucle-->
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ): the_post(); ?>  
-
+							<!--....................................................................-->
+						<div class="post-item">
 							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'taille-baniere' ); ?>
+								<div class="post-thumbnails">
+								<?php the_post_thumbnail( 'list-tumbnail' ); ?>
+								</div>
 							<?php endif; ?>
 							<a href="<?php the_permalink(); ?>">
 							<h2 class="entry_title">
@@ -24,9 +27,11 @@
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
 							</div>
+						</div>
 							<?php endwhile; ?>
 						<!-- fin de la boucle-->
-
+						<!--navigation-->
+						<div class="navigation"><p><?php posts_nav_link(); ?></p></div>
 						<!-- S'il n'y rein à afficher-->
 					<?php else : ?>
 						<p class="nothing">
@@ -36,7 +41,7 @@
 					<!-- fin -->
 					
 				</div>
-				<div class="col" style="max-width: 400px">
+				<div id="sidebar-primary" class="col col-sidebar">
 					<?php dynamic_sidebar( 'right-sidebar' ); ?>
 				</div>
 			</div>

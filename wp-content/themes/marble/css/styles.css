@@ -388,3 +388,25 @@ body {
 	margin-bottom: 20px;
 	margin-top: 25px;
 }
+/*
+post list
+*/
+.post-thumbnails{
+	float: left;
+	margin: 1rem;
+}
+.post-item:after{
+	content: '';
+	display: block;
+	width: 100%;
+	clear: both;
+
+
+/*
+sidebar
+*/
+#sidebar-primary{
+	max-width: 300px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

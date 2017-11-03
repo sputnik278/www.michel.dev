@@ -9,7 +9,7 @@
 						<?php while ( have_posts() ): the_post(); ?>  
 
 							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail( 'large' ); ?>
+								<?php the_post_thumbnail( 'signle-thumbnails' ); ?>
 							<?php endif; ?>
 							<a href="<?php the_permalink(); ?>">
 							<h2 class="entry_title">
@@ -22,11 +22,11 @@
 								par <?php the_author(); ?>
 
 							<div class="entry-content">
-								<?php the_excerpt(); ?>
+								<?php the_content(); ?>
 							</div>
 							<?php endwhile; ?>
 						<!-- fin de la boucle-->
-
+						
 						<!-- S'il n'y rein à afficher-->
 					<?php else : ?>
 						<p class="nothing">

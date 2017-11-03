@@ -23,8 +23,10 @@ function marble_setup(){
 	) );
 
     // ajoute une taille d'image personalisé
-    // nom (SLUG) de l'image, largeur, hauteru, crop
-    add_image_size( 'taille-baniere', 1024, 300, true );
+    // nom (SLUG) de l'image, largeur, hauteur, crop
+    add_image_size( 'list-tumbnail', 250, 180, true );
+    add_image_size( 'signle-thumbnails', 400, 120, true );
+    add_image_size( 'taille-baniere', 1000, 300, true );
     
     //fonctionalite pour les image dans admin
     add_theme_support( 'post-thumbnails', array( 'post' )); 
